@@ -44,6 +44,35 @@ namespace Collections
                 Console.Write(rvrs + " ");
             }
 
+            /*
+             HashTable Code
+                */
+
+            var hashtbl = new Hashtable();
+
+            hashtbl.Add("Number", 1);
+            hashtbl.Add("Car", "Ferrari");
+            hashtbl.Add(8, "eight");
+
+            var value1 = (int)hashtbl["Number"];
+            var value2 = (string)hashtbl["Car"];
+            var value3 = (string)hashtbl[8];
+
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+            Console.WriteLine(value3);
+
+            //now we remove a key
+
+            hashtbl.Remove(8);
+
+            //Lets try to find the remove key now
+
+            var valueRemoved = (string)hashtbl[8];
+            Console.WriteLine("The value of the given key is :" + valueRemoved);
+
+            // clearing all data from the HashTable
+            hashtbl.Clear();
         }
     }
 }
