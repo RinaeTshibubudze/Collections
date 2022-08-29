@@ -54,9 +54,9 @@ namespace Collections
             hashtbl.Add("Car", "Ferrari");
             hashtbl.Add(8, "eight");
 
-            var value1 = (int)hashtbl["Number"];
-            var value2 = (string)hashtbl["Car"];
-            var value3 = (string)hashtbl[8];
+            var value1 = (int)hashtbl["Number"]!;
+            var value2 = (string)hashtbl["Car"]!;
+            var value3 = (string)hashtbl[8]!;
 
             Console.WriteLine(value1);
             Console.WriteLine(value2);
@@ -68,7 +68,7 @@ namespace Collections
 
             //Lets try to find the remove key now
 
-            var valueRemoved = (string)hashtbl[8];
+            var valueRemoved = (string)hashtbl[8]!;
             Console.WriteLine("The value of the given key is :" + valueRemoved);
 
             // clearing all data from the HashTable
@@ -86,9 +86,9 @@ namespace Collections
             sortedList.Add(5, "Five Mangoes");
             sortedList.Add(1, "One Tree");
 
-            string i = (string)sortedList[1];
-            string j = (string)sortedList[5];
-            string k = (string)sortedList[3];
+            string i = (string)sortedList[1]!;
+            string j = (string)sortedList[5]!;
+            string k = (string)sortedList[3]!;
 
             Console.WriteLine(i);
             Console.WriteLine(j);
